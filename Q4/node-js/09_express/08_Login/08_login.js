@@ -25,6 +25,7 @@ app.get('/', function (req, res) {
     });
 });
 
+//if session exists use it, else create a new one
 app.get('/login', function (req, res) {
     session = req.session;
     if (session.uniqueID) {
